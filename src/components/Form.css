@@ -1,0 +1,109 @@
+
+.Kontakt{
+    background-color: white;
+    padding: 1vh;
+}
+
+.Kontakttitle{
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    background-color: white;
+    text-align: center;  
+    font-weight:bolder;
+    font-size: larger; 
+    color: black;
+}
+
+.Kontakt1{
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    background-color: white;
+    text-align: center;  
+    font-weight:300;
+    color: black;
+}
+
+.Kontakt2{
+    background-color: transparent;
+    text-align: center;  
+    font-weight:bolder;
+    font-size: larger; 
+    color: white;
+}
+
+
+.Background{
+    height: 93vh;
+    background-image: url("BL_total.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: -100px; 
+    justify-content: center;
+    align-items: center;
+    padding: 30vh 30vw;
+}
+.Field{
+    width: 40vw;
+    height: 43vh;
+    background-color: rgb(43, 43, 43);
+    opacity: 0.95;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6vh 1.6vw;
+    overflow:hidden;
+    box-shadow: 0 0 15px #000000;
+    
+}
+
+form{
+    background-color: transparent;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;   
+    
+}
+
+
+
+.formel{
+    height: 4vh;
+    background-color: transparent;
+    color:white; 
+    margin: 1vh;
+    border:solid rgb(19, 19, 19) 2px; 
+    border-radius: 5px;  
+    font-style: italic;
+    padding-left: 1vw;
+}
+
+.formel:focus{
+    border:solid white 2px; 
+    font-style:normal; 
+    z-index: 2;
+    box-shadow: 0 0 10px #e7bd32;
+}
+   
+.formels{
+    height: 4vh;
+    background-color: transparent;
+    color:white; 
+    margin: 1vh;
+    border:solid rgb(255, 255, 255) 2px; 
+    border-radius: 5px;  
+    
+}
+
+.formels:active{
+    border:solid white 2px; 
+    font-style:normal; 
+    z-index: 2;
+    box-shadow: 0 0 10px #e7bd32;
+}
+
+
+   
+
+
+

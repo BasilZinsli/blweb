@@ -1,0 +1,60 @@
+
+.Banddiv{
+  margin-top:80px;
+  background-image: url("foto.jpg");
+  background-color: black;
+  background-size: cover;
+  height: 100vh;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position-y: 80px;
+  animation-name: opa;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
+}
+@keyframes opa {
+  from {opacity: 1;}
+  to {opacity: 0.1;} 
+}
+
+
+.Text1{
+  position: absolute;
+  padding-right:15vw;
+  padding-left:10vw;
+  color: white; 
+  font-size: 130%;
+  background-color: transparent;
+  animation-name: top1;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
+  line-height: 2;
+}
+
+@keyframes top1 {
+  from {top: 0vh; opacity: 0;}
+  to {top:40vh; opacity: 0.8;} 
+}
+
+.Text2{
+  position: absolute;
+  padding-left: 30vw;
+  padding-right: 15vw;
+  color: white; 
+  font-size: 1.2;
+  background-color: transparent;
+  animation-name: top2;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
+  line-height: 2;
+}
+
+@keyframes top2 {
+  from {top: 100vh; opacity: 0;}
+  to {top:55vh; opacity: 0.8;} 
+}
+
