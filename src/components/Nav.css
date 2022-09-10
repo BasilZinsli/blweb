@@ -43,6 +43,7 @@
     padding-bottom: 600px;
     background-color: black;
     opacity: 0.9;
+    list-style: none;
 }
 
 .logo{
@@ -125,6 +126,7 @@ a:hover i:before {
 
     .listMobile{
         display:none;
+        list-style: none;
     }
 
     .Navbar {
