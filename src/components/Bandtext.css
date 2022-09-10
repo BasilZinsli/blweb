@@ -1,60 +1,149 @@
-
-.Banddiv{
-  margin-top:80px;
+.Bandfoto{
+  top:80px;
   background-image: url("foto.jpg");
-  background-color: black;
+  background-color: transparent;
   background-size: cover;
   height: 100vh;
   background-position:center;
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-position-y: 80px;
-  animation-name: opa;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-duration: 4s;
+  opacity: 0.1;
 }
-@keyframes opa {
-  from {opacity: 1;}
-  to {opacity: 0.1;} 
-}
+
 
 
 .Text1{
   position: absolute;
-  padding-right:15vw;
-  padding-left:10vw;
+  padding-right:5vw;
+  padding-left:5vw;
   color: white; 
   font-size: 130%;
   background-color: transparent;
-  animation-name: top1;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-duration: 4s;
   line-height: 2;
-}
-
-@keyframes top1 {
-  from {top: 0vh; opacity: 0;}
-  to {top:40vh; opacity: 0.8;} 
+  top:110px;
 }
 
 .Text2{
   position: absolute;
-  padding-left: 30vw;
-  padding-right: 15vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
   color: white; 
   font-size: 1.2;
   background-color: transparent;
-  animation-name: top2;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-duration: 4s;
   line-height: 2;
+  top:300px;
 }
 
-@keyframes top2 {
-  from {top: 100vh; opacity: 0;}
-  to {top:55vh; opacity: 0.8;} 
+@media screen and (max-width: 400px){
+  .Text1{
+    position: absolute;
+    padding-right:5vw;
+    padding-left:5vw;
+    color: white; 
+    font-size: 100%;
+    background-color: transparent;
+    line-height: 2;
+    top:110px;
+  }
+  
+  .Text2{
+    position: absolute;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: white; 
+    font-size: 90%;
+    background-color: transparent;
+    line-height: 2;
+    top:200px;
+  }
+  
 }
 
+@media screen and (max-width: 400px){
+  .Text1{
+    position: absolute;
+    padding-right:5vw;
+    padding-left:5vw;
+    color: white; 
+    font-size: 90%;
+    background-color: transparent;
+    line-height: 2;
+    top:90px;
+  }
+  
+  .Text2{
+    position: absolute;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: white; 
+    font-size: 80%;
+    background-color: transparent;
+    line-height: 2;
+    top:200px;
+  }
+  
+}
+
+
+@media screen and (min-width: 940px){
+  .Bandfoto{
+    margin-top:80px;
+    background-image: url("foto.jpg");
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position-y: 80px;
+    animation-name: opa;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+  }
+  @keyframes opa {
+    from {opacity: 1;}
+    to {opacity: 0.1;} 
+  }
+
+
+  .Text1{
+    position: absolute;
+    padding-right:15vw;
+    padding-left:10vw;
+    color: white; 
+    font-size: 130%;
+    background-color: transparent;
+    animation-name: top1;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    line-height: 2;
+    
+  }
+
+  @keyframes top1 {
+    from {top: 0vh; opacity: 0;}
+    to {top:35vh; opacity: 0.8;} 
+  }
+
+  .Text2{
+    position: absolute;
+    padding-left: 30vw;
+    padding-right: 15vw;
+    color: white; 
+    font-size: 1.2;
+    background-color: transparent;
+    animation-name: top2;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    line-height: 2;
+  }
+
+  @keyframes top2 {
+    from {top: 100vh; opacity: 0;}
+    to {top:45vh; opacity: 0.8;} 
+  }
+}

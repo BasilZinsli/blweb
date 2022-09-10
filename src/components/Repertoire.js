@@ -34,7 +34,7 @@ export default function Repertoire() {
         
           <form className='form1'>
               <button type="submit" disabled style={{display: "none"}} aria-hidden="true"></button>
-              <input type="text" id="stext" name="stext" placeholder='Suche nach Songs/Künstler/Genre' onChange={ (e) => setSearchTerm(e.target.value.toLowerCase())} ></input>
+              <input type="text" id="stext" name="stext" placeholder='Suche' onChange={ (e) => setSearchTerm(e.target.value.toLowerCase())} ></input>
           </form>
         
           <table id="songs">

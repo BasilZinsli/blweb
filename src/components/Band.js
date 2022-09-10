@@ -62,6 +62,29 @@ function Band() {
     console.log(show4);
    }
 
+   function only1 (e) {
+    setShow2(false);
+    setShow3(false);
+    setShow4(false);
+   }
+
+   function only2 (e) {
+    setShow1(false);
+    setShow3(false);
+    setShow4(false);
+   }
+
+   function only3 (e) {
+    setShow2(false);
+    setShow1(false);
+    setShow4(false);
+   }
+
+   function only4 (e) {
+    setShow2(false);
+    setShow3(false);
+    setShow1(false);
+   }
    
   return (  
     <div id='band'>
@@ -71,7 +94,7 @@ function Band() {
     unvergessliche Momente sorgt. Auf Anfrage ist es auch möglich, eine kleinere Formation zu buchen,
     welche optimal zu deinem Anlass passt.</p> </div>
     <div className='Bios' >
-       <div className='Quad' onMouseEnter={Enter1} onMouseLeave={Leave1}>
+       <div className='Quad' onClick={only1} onMouseEnter={Enter1} onMouseLeave={Leave1}>
               {show1?<p className='Biob'> <h5 className='Biot'>Basil Zinsli</h5> 
               gründete 2011  die Acapella Formation "INVIVAS", welche sich von einer Bündner Schülerband 
                 zu einer festen Grösse in der Schweizer Musikszene etabliert hat. 
@@ -90,7 +113,7 @@ function Band() {
                 </div>}
         </div>
 
-        <div className='Quad' onMouseEnter={Enter2} onMouseLeave={Leave2}>
+        <div className='Quad' onClick={only2} onMouseEnter={Enter2} onMouseLeave={Leave2}>
               {show2?<p className='Biob'> <h5 className='Biot'>Leonardo Simovic</h5> ist 30 Jahre alt und wohnt in Zürich. 
         Er arbeitet als Fullstack Developer bei Auterion. Zu seinen Lieblingsmusikern gehören Bootsy Collins und Victor Wooten. 
         Entsprechend seinen Vorbildern legt er bei Birdland einen soliden Boden für Groove und Harmonie. </p>
@@ -103,7 +126,7 @@ function Band() {
                 </div>}
         </div>
 
-        <div className='Quad' onMouseEnter={Enter3} onMouseLeave={Leave3}>
+        <div className='Quad' onClick={only3} onMouseEnter={Enter3} onMouseLeave={Leave3}>
               {show3?<p className='Biob'> <h5 className='Biot'>Manuel Zolliker</h5>ist als Pianist in der Schweizer Gospel-, 
               Pop- und Jazzszene aktiv. Seit seinem Studium an der Zürcher Hochschule 
               der Künste in Jazz-Klavier und Schulmusik II arbeitet er als Klavierlehrer an der 
@@ -118,7 +141,7 @@ function Band() {
                 </div>}
         </div>
 
-        <div className='Quad' onMouseEnter={Enter4} onMouseLeave={Leave4}>
+        <div className='Quad' onClick={only4} onMouseEnter={Enter4} onMouseLeave={Leave4}>
               {show4?<p className='Biob'> <h5 className='Biot'>Stefan Lengg</h5> ist seit dem Abschluss des Musikstudiums an der Swiss Music Academy 
               als Schlagzeuger / 
               Perkussionist im Bereich Pop und Gospel aktiv.

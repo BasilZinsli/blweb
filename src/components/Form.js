@@ -2,8 +2,7 @@ import React from 'react';
 import { useState } from "react";
 
 import './Form.css';
-import { Controller, useForm } from 'react-hook-form'
-import DatePicker from 'react-datepicker'
+import {useForm } from 'react-hook-form'
 
 function Form() {
  
@@ -26,7 +25,7 @@ function Form() {
         
         <div className='Background'> 
             <div className='Field'>
-            <h1 className='Kontakt2'>Kontaktiere uns!</h1>
+              <h1 className='Kontakt2'>Kontaktiere uns!</h1>
               <form onSubmit={handleSubmit((data) => setData(console.log(data)))}>
                   <input className='formel'  {...register("Art der Veranstaltung")} placeholder="Art der Veranstaltung" />
                   <input className='formel'  {...register("Ort")} placeholder="Ort" />
@@ -34,7 +33,7 @@ function Form() {
                   <input className='formel'  {...register("Telefon")} placeholder="Telefon" />
                   <input className='formel'  {...register("Nachricht")} placeholder="Nachricht" />
                   <input className='formels' type="submit" />
-                </form> 
+              </form> 
             </div>   
         </div>
 

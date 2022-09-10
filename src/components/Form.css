@@ -1,4 +1,3 @@
-
 .Kontakt{
     background-color: white;
     padding: 1vh;
@@ -39,13 +38,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: -100px; 
+    
     justify-content: center;
     align-items: center;
-    padding: 30vh 30vw;
+    padding: 30vh 0;
 }
 .Field{
-    width: 40vw;
-    height: 43vh;
+    width: 400px;
+    margin: auto;
+    margin-top: -10vh;
     background-color: rgb(43, 43, 43);
     opacity: 0.95;
     border-radius: 10px;
@@ -56,6 +57,7 @@
     box-shadow: 0 0 15px #000000;
     
 }
+
 
 form{
     background-color: transparent;
@@ -68,7 +70,7 @@ form{
 
 
 .formel{
-    height: 4vh;
+    height: 40px;
     background-color: transparent;
     color:white; 
     margin: 1vh;
@@ -84,14 +86,15 @@ form{
     z-index: 2;
     box-shadow: 0 0 10px #e7bd32;
 }
-   
+
 .formels{
-    height: 4vh;
+    height: 40px;
     background-color: transparent;
     color:white; 
     margin: 1vh;
     border:solid rgb(255, 255, 255) 2px; 
     border-radius: 5px;  
+    
     
 }
 
@@ -102,6 +105,115 @@ form{
     box-shadow: 0 0 10px #e7bd32;
 }
 
+
+@media screen and (max-width: 420px){
+    .Background{
+        height: 500px;
+        background-image: none;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position-y: -100px; 
+        justify-content: center;
+        align-items: center;
+        padding: 15vh 0;
+    }
+    .Field{
+        width: 90vw;
+        height: 405px;
+        margin: auto;
+        margin-top: -10vh;
+        background-color: rgb(43, 43, 43);
+        opacity: 0.95;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 1.6vh 1.6vw;
+        overflow:hidden;
+        box-shadow: 0 0 15px #000000;
+        
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 940px){
+    .Kontakt{
+        background-color: white;
+        padding: 1vh;
+    }
+
+    .Kontakttitle{
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+        background-color: white;
+        text-align: center;  
+        font-weight:bolder;
+        font-size: larger; 
+        color: black;
+    }
+
+    .Kontakt1{
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+        background-color: white;
+        text-align: center;  
+        font-weight:300;
+        color: black;
+    }
+
+    .Kontakt2{
+        background-color: transparent;
+        text-align: center;  
+        font-weight:bolder;
+        font-size: larger; 
+        color: white;
+    }
+
+
+    .Background{
+        height: 93vh;
+        background-image: url("BL_total.jpg");
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position-y: -100px; 
+        justify-content: center;
+        align-items: center;
+        padding: 30vh 0;
+    }
+    .Field{
+        width: 43vw;
+        height: 405px;
+        margin: auto;
+        margin-top: -10vh;
+        background-color: rgb(43, 43, 43);
+        opacity: 0.95;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 1.6vh 1.6vw;
+        overflow:hidden;
+        box-shadow: 0 0 15px #000000;
+        
+    }
+
+    form{
+        background-color: transparent;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;   
+        
+    }
+
+
+
+}
 
    
 

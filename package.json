@@ -12,6 +12,7 @@
     "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.34.2",
+    "react-icons": "^4.4.0",
     "react-player": "^2.10.1",
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
@@ -27,7 +28,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",

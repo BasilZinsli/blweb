@@ -1,4 +1,4 @@
-import Header from './components/Header';
+import Nav from './components/Nav';
 import Bandtext from './components/Bandtext';
 import Band from './components/Band';
 import React from 'react'
@@ -10,11 +10,11 @@ import Form from './components/Form';
 function App() {
   return (
       <div>
-          <Header />
+          <Nav />
           <Bandtext />
           <Youtube/>
           <Band/>
-          <Repertoire/>
+          <Repertoire/> 
           <Form/>
       </div>
   );

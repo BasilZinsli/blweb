@@ -1,6 +1,7 @@
 .Absatz{
     background-color: white;
 }
+
 .Biotitel{
     padding-top: 2vh;
     padding-bottom: 1vh;
@@ -13,24 +14,23 @@
 
 .Textband{
     background-color: white;
-    padding-left:20vw;
-    padding-right:20vw;
+    padding-left:5vw;
+    padding-right:5vw;
     padding-bottom: 2vh;
     text-align: center;   
 }
 
 .Bios{
     width:20vw;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 10vw; 
-    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     margin: auto;
     margin-top: 100px;
     padding:0;
     margin-bottom: 100px;
-   
 }
 
 .Quad{
@@ -101,4 +101,118 @@
     font-weight: 100;
     font-size: 150%;
     font-style:italic;
+}
+
+@media screen and (max-width: 420px){
+    .Bios{
+        width:90vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10vw; 
+        justify-content: center;
+        align-items: center;
+    
+        margin-top: 50px;
+        padding:0;
+        margin-bottom: 50px;
+    }
+    .Quad{
+        width: 90%;
+        min-height: 0px;
+        background-color: rgb(48, 48, 48);
+        border: solid #e7bd22 2px;
+        border-radius: 4px;  
+        transition: 0.5s;    
+    }
+    
+    .Quad:hover{
+        box-shadow: 0 0 15px #e7bd22;
+        transition: 0.5s;     
+    }
+    
+    
+    .Quad .Biob{
+        margin:0% 2%;
+        background-color: rgb(48, 48, 48);
+        color: white;
+        padding: 10px;         
+    }
+    .Quad .Biot{
+        margin:2% 0%;
+        background-color: rgb(48, 48, 48);
+        color: #e7bd22;
+    }
+    
+    
+    .switch{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(48, 48, 48);     
+    }
+    
+    .Quad .Crop{
+        width: 75%;
+        aspect-ratio: 1/1;
+        max-height:80vw ;
+        overflow: hidden;
+        margin: auto;
+        background-color: rgb(48, 48, 48);
+        border-radius: 100%;
+        margin-top: 15px;
+        box-shadow: 0 0 25px #000000;
+        
+    }
+    
+    .Quad .Portraits{
+        position: relative;
+        
+        object-fit: contain;
+        width: 100%; 
+    }
+    
+    .Quad .Names{
+        margin-top: 15px;
+        background-color: rgb(48, 48, 48);
+        color: white;
+        text-align: center;
+        font-weight: 600;
+        font-size: 150%;  
+    }
+    
+    .Quad .Func{
+        margin-top: 10px;
+        background-color: rgb(48, 48, 48);
+        color: white;
+        text-align: center;
+        font-weight: 100;
+        font-size: 100%;
+        font-style:italic;
+    }
+      
+
+    
+}
+ 
+ 
+ @media screen and (min-width: 940px){
+    .Bios{
+        width:60vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+       margin:auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        
+        
+    }
+
+    .Textband{
+        background-color: white;
+        padding-left:20vw;
+        padding-right:20vw;
+        padding-bottom: 2vh;
+        text-align: center;   
+    }
 }
