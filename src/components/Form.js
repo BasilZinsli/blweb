@@ -27,11 +27,11 @@ function Form() {
             <div className='Field'>
               <h1 className='Kontakt2'>Kontaktiere uns!</h1>
               <form onSubmit={handleSubmit((data) => setData(console.log(data)))}>
-                  <input className='formel'  {...register("Art der Veranstaltung")} placeholder="Art der Veranstaltung" />
-                  <input className='formel'  {...register("Ort")} placeholder="Ort" />
-                  <input className='formel'  {...register("Anzahl Personen")} placeholder="Anzahl Personen" />
-                  <input className='formel'  {...register("Telefon")} placeholder="Telefon" />
-                  <input className='formel'  {...register("Nachricht")} placeholder="Nachricht" />
+                  <input className='formel'  {...register("Art der Veranstaltung")} autoComplete="off" placeholder="Art der Veranstaltung" />
+                  <input className='formel'  {...register("Ort")} autoComplete="off" placeholder="Ort" />
+                  <input className='formel'  {...register("Anzahl Personen")} autoComplete="off" placeholder="Anzahl Personen" />
+                  <input className='formel'  {...register("Telefon")} autoComplete="off" placeholder="Telefon" />
+                  <input className='formel'  {...register("Nachricht")} autoComplete="off" placeholder="Nachricht" />
                   <input className='formels' type="submit" />
               </form> 
             </div>   

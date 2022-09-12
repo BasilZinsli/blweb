@@ -1,23 +1,19 @@
-import Nav from './components/Nav';
-import Bandtext from './components/Bandtext';
-import Band from './components/Band';
-import React from 'react'
-import Youtube from './components/Youtube';
-import Repertoire from './components/Repertoire';
-import Form from './components/Form';
+import React from 'react';
+import './App.css';
+import {Route, Routes} from 'react-router-dom';
+import MainPage from './MainPage';
+import AGB from './components/AGB';
+import Impressum from './components/Impressum';
 
-
-function App() {
-  return (
-      <div>
-          <Nav />
-          <Bandtext />
-          <Youtube/>
-          <Band/>
-          <Repertoire/> 
-          <Form/>
-      </div>
-  );
+export default function App(){
+    return(  
+    <Routes> 
+            <Route path="/" element={<MainPage/>}></Route>
+            <Route path="/Impressum" element={<Impressum/>}></Route>
+            <Route path="/AGB" element={<AGB/>}></Route>
+    </Routes>  
+    );
 }
 
-export default App;
+
+

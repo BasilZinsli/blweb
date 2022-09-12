@@ -1,0 +1,83 @@
+.Footer{
+    width: 260px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    z-index: 1;
+}
+
+.socLinks{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    gap: 60px;
+    padding-bottom: 1vh;   
+}
+
+.socLinks a{
+align-items: center;
+margin-bottom: 5px;
+}
+
+.socLinks a:hover{
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.ImprAGB {
+    width: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.ImprAGB a{
+    font-size: smaller;
+    color:white;
+}
+
+.ImprAGB a:hover{
+    color:#e7bd22;
+}
+
+.Copyright{
+    width: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
+.Copyright p{
+    font-size: small;
+    color:white;
+    text-align: center;
+    
+}
+
+@media screen and (min-width: 420px){
+    .Footer{
+        width: 280px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 2vh;
+    }
+    
+    .socLinks{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        display:flex;
+        flex-direction: row;
+        gap: 60px;
+        padding-bottom: 1vh;   
+    }
+    .socLinks a{
+        align-items: center;
+        }
+}

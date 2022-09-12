@@ -23,8 +23,7 @@
 .hamburger{
     display:flex;
     margin-right: 50px;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 
 .listMobile{
@@ -42,9 +41,16 @@
     padding-top: 100px;
     padding-bottom: 600px;
     background-color: black;
-    opacity: 0.9;
-    list-style: none;
+    opacity: 0.95;
+    list-style: none;  
+    animation-name: swipe;
+    animation-duration: 0.5s;
 }
+
+@keyframes swipe {
+    from {left:-100vh;}
+    to {left:0vh;} 
+}  
 
 .logo{
     padding-top: 10px;
@@ -52,7 +58,7 @@
     filter: saturate(1.4);
 }
 
-a {
+.list a {
     position: relative;
     background-color: white;
     color:white;
@@ -61,23 +67,37 @@ a {
     font-size: 1.5em;
     letter-spacing: 0.1em;
     font-weight: 400;
-    transition: 0.5s;  
-    
+    transition: 0.5s;    
 }
 
-a:focus{
+.listMobile a {
+    position: relative;
+    background-color: transparent;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    transition: 0.5s;    
+}
+.listMobile a:hover {
+    cursor: pointer;   
+}
+
+.list a:focus{
     background-color:#e7bd32;
 }
 
-a:hover{
+.list a:hover{
     letter-spacing: 0.15em;   
     background: #e7bd32;
     color: #e7bd32;
-    box-shadow: 0 0 15px  #e7bd32;
+    box-shadow: 0 0 2px  #e7bd32;
     cursor:pointer;
 }
 
-a:before{
+.list a:before{
     content: "";
     position: absolute;
     inset: 2px;
@@ -86,7 +106,7 @@ a:before{
 
 
 
-a span{
+.list a span{
     position: relative;
     z-index: 1;  
     top:-0.3vh; 
@@ -94,7 +114,7 @@ a span{
     margin-right:1.5vw; 
 }
 
-a i:before {
+.list a i:before {
     content: '';
     position: absolute;
     top:0;
@@ -106,7 +126,7 @@ a i:before {
     transition: 0.3s;
 }
 
-a:hover i:before {
+.list a:hover i:before {
     content: '';
     position: absolute;
     top:0;
@@ -118,16 +138,21 @@ a:hover i:before {
     transition: 0.3s;
 }
 
+
+
+
+
 @media only screen and (min-width: 940px) {
     .hamburger{
-        display:none;
-        
+        display:none;   
     }
 
-    .listMobile{
+    .listMobile{ 
         display:none;
-        list-style: none;
+        list-style: none;   
     }
+
+    
 
     .Navbar {
         z-index: 1;
@@ -139,8 +164,7 @@ a:hover i:before {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        overflow: hidden; 
-        
+        overflow: hidden;    
     }
 
     .Navbar .list{
@@ -160,7 +184,7 @@ a:hover i:before {
         filter: saturate(1.4);
     }
 
-    a {
+    .list a {
         position: relative;
         background-color: white;
         color:white;
@@ -173,7 +197,7 @@ a:hover i:before {
         
     }
 
-    a:hover{
+    .list a:hover{
         letter-spacing: 0.15em;   
         background: #e7bd32;
         color: #e7bd32;
@@ -181,7 +205,7 @@ a:hover i:before {
         cursor:pointer;
     }
 
-    a:before{
+    .list a:before{
         content: "";
         position: absolute;
         inset: 2px;
@@ -190,7 +214,7 @@ a:hover i:before {
 
 
     
-    a span{
+    .list a span{
         position: relative;
         z-index: 1;  
         top:-0.3vh; 
@@ -198,7 +222,7 @@ a:hover i:before {
         margin-right:1.5vw; 
     }
     
-    a i:before {
+    .list a i:before {
         content: '';
         position: absolute;
         top:0;
@@ -210,7 +234,7 @@ a:hover i:before {
         transition: 0.3s;
     }
 
-    a:hover i:before {
+    .list a:hover i:before {
         content: '';
         position: absolute;
         top:0;

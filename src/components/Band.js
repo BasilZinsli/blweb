@@ -99,8 +99,7 @@ function Band() {
               gründete 2011  die Acapella Formation "INVIVAS", welche sich von einer Bündner Schülerband 
                 zu einer festen Grösse in der Schweizer Musikszene etabliert hat. 
                 Im Herbst 2013 begann er sein Bachelorstudium mit Hauptfach Posaune 
-                Klassik bei David Bruchez and der Zürcher Hochschule der Künste. Dieses 
-                schloss er 2016 mit Bestnote ab. Parallel dazu besuchte er Sologesang und 
+                Klassik bei David Bruchez and der Zürcher Hochschule der Künste. Parallel dazu besuchte er Sologesang und 
                 bildete sich autodidaktisch in den Bereichen "Producing" und "Arranging" weiter. 
                 Diese Vielseitigkeit bewog ihn dazu, für das Masterstudium in die Jazz- Popabteilung zu 
                 wechseln, welches er im Fach Popgesang 2019 abschloss. </p>

@@ -2,7 +2,7 @@ import React from 'react';
 import './Nav.css';
 import Logo from  './logo.png'; 
 import {Link} from 'react-scroll';
-import { FaBars, FaTimes } from 'react-icons/fa'
+import {FaBars, FaTimes } from 'react-icons/fa'
 import {useState} from 'react';
 
 
@@ -18,10 +18,11 @@ function Nav(){
     return(
         <div className='Frontpage'>
             <div className='Navbar'>
+                
                 <img className='logo' src={Logo} alt='logo'></img>
-
-                <button className='hamburger'   onClick={toggleList}>
-                    {mobileList ? (<FaTimes size={30} style={{ color: '#ffffff' }} />): (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+                
+                <button className='hamburger' style={{ border: "none"}} onClick={toggleList}>
+                    {mobileList ? (<FaTimes size={30}  style={{ color: '#ffffff'}} />): (<FaBars size={30} style={{ color: '#ffffff' }} />)}    
                 </button>
                 
                 
@@ -38,8 +39,7 @@ function Nav(){
                     <li> 
                         <Link activeClass="active" to="kontakt" spy={true} smooth={true} offset={-70} duration={500}><span>Kontakt</span><i></i></Link>   
                     </li>
-                </ul>  
-                
+                </ul>     
             </div>
             
             {mobileList?(
@@ -56,10 +56,8 @@ function Nav(){
                 <li> 
                     <Link activeClass="active" onClick={toggleList} to="kontakt" spy={true} smooth={true} offset={-70} duration={500}><span>Kontakt</span><i></i></Link>   
                 </li> 
-            </ul>):<></>}
-            
+            </ul>):<></>}    
         </div>
-
     );
 }
 

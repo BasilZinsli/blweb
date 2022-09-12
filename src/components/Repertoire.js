@@ -32,7 +32,7 @@ export default function Repertoire() {
       
       <div className="Repertoire">
         
-          <form className='form1'>
+          <form className='form1' autoComplete='off'>
               <button type="submit" disabled style={{display: "none"}} aria-hidden="true"></button>
               <input type="text" id="stext" name="stext" placeholder='Suche' onChange={ (e) => setSearchTerm(e.target.value.toLowerCase())} ></input>
           </form>

@@ -1,0 +1,67 @@
+
+.FotoAGB{
+    top:80px;
+    background-image: url("foto.jpg");
+    background-color: transparent;
+    background-size: cover;
+    height: 100vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position-y: 80px;
+    opacity: 0.05;
+  }
+  
+  
+  
+  .Text1AGB{
+    position: absolute;
+    padding-right:5vw;
+    padding-left:5vw;
+    color: white; 
+    font-size: 130%;
+    background-color: transparent;
+    line-height: 2;
+    top:110px;
+  }
+  
+  .Text2AGB{
+    position: absolute;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: white; 
+    font-size: 1.2;
+    background-color: transparent;
+    line-height: 2;
+    top:180px;
+  }
+  
+  
+  
+  @media screen and (max-width: 400px){
+    .Text1AGB{
+      position: absolute;
+      padding-right:5vw;
+      padding-left:5vw;
+      color: white; 
+      font-size: 90%;
+      background-color: transparent;
+      line-height: 2;
+      top:100px;
+    }
+    
+    .Text2AGB{
+      position: absolute;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      color: white; 
+      font-size: 80%;
+      background-color: transparent;
+      line-height: 2;
+      top:150px;
+    }
+    
+  }
+  
+  
+  
