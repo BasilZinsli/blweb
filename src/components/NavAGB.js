@@ -19,7 +19,6 @@ function NavAGB(){
                 </ul>     
             </div>
             
-            
         </div>
     );
 }
