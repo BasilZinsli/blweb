@@ -15,7 +15,7 @@ function NavAGB(){
                 <ul className='list2'>
                     
                     <li> 
-                    <a href='/blweb'><span>Home</span><i></i></a> 
+                    <a href='/'><span>Home</span><i></i></a> 
                     </li>
                     
                 </ul>     
