@@ -7,11 +7,11 @@ import Impressum from './components/Impressum';
 
 export default function App(){
     return(  
-    <Routes> 
+        <Routes> 
             <Route path="/" element={<MainPage/>}></Route>
             <Route path="/Impressum" element={<Impressum/>}></Route>
             <Route path="/AGB" element={<AGB/>}></Route>
-    </Routes>  
+        </Routes>  
     );
 }
 
