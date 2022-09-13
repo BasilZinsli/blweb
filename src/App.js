@@ -8,10 +8,10 @@ import Impressum from './components/Impressum';
 export default function App(){
     return( 
         <div> 
-            <Routes  basename={process.env.PUBLIC_URL}> 
-                <Route path="/" element={<MainPage/>} ></Route>
-                <Route path="/Impressum" element={<Impressum/>}></Route>
-                <Route path="/AGB" element={<AGB/>}></Route>
+            <Routes > 
+                <Route exact path="/blweb" element={<MainPage/>} ></Route>
+                <Route exact path="/Impressum" element={<Impressum/>}></Route>
+                <Route exact path="/AGB" element={<AGB/>}></Route>
             </Routes>
         </div>   
     );
