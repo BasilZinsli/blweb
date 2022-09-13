@@ -6,12 +6,14 @@ import AGB from './components/AGB';
 import Impressum from './components/Impressum';
 
 export default function App(){
-    return(  
-        <Routes> 
-            <Route path="/" element={<MainPage/>}></Route>
-            <Route path="/Impressum" element={<Impressum/>}></Route>
-            <Route path="/AGB" element={<AGB/>}></Route>
-        </Routes>  
+    return( 
+        <div> 
+            <Routes> 
+                <Route path="/" element={<MainPage/>}></Route>
+                <Route path="/Impressum" element={<Impressum/>}></Route>
+                <Route path="/AGB" element={<AGB/>}></Route>
+            </Routes>
+        </div>   
     );
 }
 
