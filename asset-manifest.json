@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blweb/static/css/main.b667056b.css",
-    "main.js": "/blweb/static/js/main.f6a4f39b.js",
+    "main.css": "/blweb/static/css/main.7e0f1ffc.css",
+    "main.js": "/blweb/static/js/main.6075d966.js",
     "static/js/787.6e348bec.chunk.js": "/blweb/static/js/787.6e348bec.chunk.js",
     "static/media/BL_total.jpg": "/blweb/static/media/BL_total.02d6f8e00b5e9d7c1542.jpg",
     "static/media/foto.jpg": "/blweb/static/media/foto.32e8db3d23045ae25d38.jpg",
@@ -11,12 +11,12 @@
     "static/media/Solo_Stefan.jpg": "/blweb/static/media/Solo_Stefan.e860fe837a4b44b7744c.jpg",
     "static/media/logo.png": "/blweb/static/media/logo.7100754ec27ba5918bc7.png",
     "index.html": "/blweb/index.html",
-    "main.b667056b.css.map": "/blweb/static/css/main.b667056b.css.map",
-    "main.f6a4f39b.js.map": "/blweb/static/js/main.f6a4f39b.js.map",
+    "main.7e0f1ffc.css.map": "/blweb/static/css/main.7e0f1ffc.css.map",
+    "main.6075d966.js.map": "/blweb/static/js/main.6075d966.js.map",
     "787.6e348bec.chunk.js.map": "/blweb/static/js/787.6e348bec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b667056b.css",
-    "static/js/main.f6a4f39b.js"
+    "static/css/main.7e0f1ffc.css",
+    "static/js/main.6075d966.js"
   ]
 }
