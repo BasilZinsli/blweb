@@ -22,7 +22,7 @@
 
 .hamburger{
     display:flex;
-    margin-right: 4vh;
+    margin-right: 3.54vh;
     cursor: pointer;    
 }
 
@@ -44,17 +44,17 @@
     opacity: 0.95;
     list-style: none;  
     animation-name: swipe;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
 }
 
 @keyframes swipe {
-    from {left:-100vh;}
+    from {left:100vh;}
     to {left:0vh;} 
 }  
 
 .logo{
     padding-top: 5px;
-    height: 215%;
+    height: 100%;
     filter: saturate(1.4);
 }
 
@@ -103,7 +103,27 @@
     inset: 2px;
     background:black;
 } 
+.socLinks1{
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    margin: auto;
+    margin-top: 18px;
+    display:flex;
+    flex-direction: row;
+    gap: 8vw;
+    padding-bottom: 1vh;   
+}
 
+.socLinks1 a{
+align-items: center;
+margin-bottom: 5px;
+}
+
+.socLinks1 a:hover{
+    align-items: center;
+    margin-bottom: 5px;
+}
 
 
 .list a span{
@@ -167,6 +187,27 @@
         overflow: hidden;    
     }
 
+    .socLinks1{
+        justify-content: center;
+        align-items: center;
+        
+        margin: auto;
+        margin-top: 15px;
+        display:none;
+        flex-direction: row;
+        gap: 10vw;
+        padding-bottom: 1vh;   
+    }
+    
+    .socLinks1 a{
+    align-items: center;
+    margin-bottom: 5px;
+    }
+    
+    .socLinks1 a:hover{
+        align-items: center;
+        margin-bottom: 5px;
+    }
     .Navbar .list{
         display: flex;
         list-style: none;
