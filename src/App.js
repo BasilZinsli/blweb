@@ -9,7 +9,7 @@ export default function App(){
     return( 
         <div> 
             <Routes > 
-                <Route exact path="/blweb" element={<MainPage/>} ></Route>
+                <Route exact path="/blweb-live" element={<MainPage/>} ></Route>
                 <Route exact path="/Impressum" element={<Impressum/>}></Route>
                 <Route exact path="/AGB" element={<AGB/>}></Route>
             </Routes>
