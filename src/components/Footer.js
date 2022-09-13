@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebookSquare, faInstagramSquare, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons"
-
+import {Link} from 'react-router-dom';
 
 export default function Footer(){
     
@@ -23,12 +23,12 @@ export default function Footer(){
                 </a>
             </div>   
             <div className='ImprAGB'>
-                <a href='/Impressum' className='IAGB' style={{ border: "none"}}>
+                <Link to='/Impressum' className='IAGB' style={{ border: "none"}}>
                         Impressum   
-                </a> 
-                <a href='/AGB' className='IAGB' style={{ border: "none"}}>
+                </Link> 
+                <Link to='/AGB' className='IAGB' style={{ border: "none"}}>
                         Datenschutz   
-                </a> 
+                </Link> 
             </div>   
 
             <div className='Copyright'>

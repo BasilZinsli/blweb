@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavAGB.css';
 import Logo from  './logo.png'; 
-
+import {Link} from 'react-router-dom';
 
 function NavAGB(){
 
@@ -10,12 +10,10 @@ function NavAGB(){
             <div className='Navbar1'>
                 <img className='logo' src={Logo} alt='logo'></img>
 
-                
-                
                 <ul className='list2'>
                     
                     <li> 
-                    <a href='/'><span>Home</span><i></i></a> 
+                    <Link to='/'><span>Home</span><i></i></Link> 
                     </li>
                     
                 </ul>     
