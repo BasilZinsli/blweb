@@ -76,9 +76,41 @@ form{
     margin: 1vh;
     border:solid rgb(19, 19, 19) 2px; 
     border-radius: 5px;  
-    text-align: center;
+    text-align: center; 
+}
+
+
+.formelNachricht{
+    height: 140px;
+    background-color: transparent;
+    color:white; 
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border:solid rgb(19, 19, 19) 2px; 
+    border-radius: 5px;  
+    text-align: center; 
+    min-width: 93%;
+    resize:none;
+    justify-content: space-around;
+    padding: 1vh 1vw;
+    
+    
     
 }
+.formelNachricht:focus{
+    outline: none;
+    font-style:normal; 
+    z-index: 2;
+    box-shadow: 0 0 5px #e7bd32;
+    
+}
+.formelNachricht:focus-visible{
+    border:none; 
+    
+}
+
+
 
 .formel:focus{
     outline: none;
@@ -123,6 +155,22 @@ form{
         background-size: 0;
         justify-content: center;
         align-items: center;
+        
+    }
+    .formelNachricht{
+        height: 140px;
+        background-color: transparent;
+        color:white; 
+        margin: auto;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        border:solid rgb(19, 19, 19) 2px; 
+        border-radius: 5px;  
+        text-align: center; 
+        max-width: 92%;
+        resize:none;
+        justify-content: space-around;
+        
         
     }
     .formel:focus-visible{
@@ -199,6 +247,7 @@ form{
         justify-content: center;
         align-items: center;
         padding: 30vh 0;
+        
     }
     .Field{
         width: 400px;
@@ -214,6 +263,21 @@ form{
         box-shadow: 0 0 15px #000000;   
     }
     
+    .formelNachricht{
+        height:140px;
+        background-color: transparent;
+        color:white; 
+        margin: auto;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        border:solid rgb(19, 19, 19) 2px; 
+        border-radius: 5px;  
+        text-align: center; 
+        max-width: 94%;
+        resize:none;
+        justify-content: space-around;
+        
+    }
 
     form{
         background-color: transparent;

@@ -1,5 +1,5 @@
 .Bandfoto{
-  top:80px;
+  top:60px;
   background-image: url("foto.jpg");
   background-color: transparent;
   background-size: cover;
@@ -7,7 +7,7 @@
   background-position:center;
   background-repeat: no-repeat;
   background-attachment: fixed; 
-  background-position-y: 80px;
+  background-position-y: 60px;
   opacity: 0.1;
 }
 
@@ -88,7 +88,7 @@
 
 @media screen and (min-width: 940px){
   .Bandfoto{
-    margin-top:80px;
+    
     background-image: url("foto.jpg");
     background-color: black;
     background-size: cover;
@@ -96,11 +96,12 @@
     background-position:center;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-position-y: 80px;
+    background-position-y: 60px;
     animation-name: opa;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-duration: 4s;
+    
   }
   @keyframes opa {
     from {opacity: 1;}

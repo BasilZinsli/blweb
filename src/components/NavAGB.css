@@ -10,7 +10,7 @@
         position: fixed;
         top:0px;
         width: 100vw;
-        height: 80px;
+        height: 60px;
         background-color: black;
         display: flex;
         align-items: center;
@@ -29,9 +29,9 @@
 
 
 
-    .logo{
-        padding-top: 10px;
-        height: 160%;
+    .logo1{
+        padding-top: 5px;
+        height: 215%;
         filter: saturate(1.4);
     }
 

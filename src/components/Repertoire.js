@@ -26,8 +26,7 @@ export default function Repertoire() {
     <div> 
           <div className='Rep' id='Repertoire' > 
             <h5 className='repTitel'>Repertoire</h5>
-            <p className='repText'> Hier erhälst du einen kleinen Einblick in unser Repertoire.
-                Ist dein Lieblingssong auch dabei?</p> 
+            <p className='repText'> Hier erhälst du einen kleinen Einblick in unser Repertoire. Songwünsche sind gegen Aufpreis möglich.</p> 
           </div>
       
       <div className="Repertoire">

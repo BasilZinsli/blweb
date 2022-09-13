@@ -2,9 +2,13 @@ import React from 'react';
 import './AGB.css';
 import NavAGB from './NavAGB';
 import Footer from './Footer';
-
+import {useEffect} from 'react';
 
 export default function AGB(){
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return(  
     <div className='AGBS'>
         <NavAGB/>
