@@ -8,7 +8,7 @@ function NavAGB(){
     return(
         <div className='Frontpage'>
             <div className='Navbar1'>
-                <img className='logo1' src={Logo} alt='logo'></img>
+                <img className='logo1' src={Logo} alt='logo1'></img>
 
                 <ul className='list2'>
                     

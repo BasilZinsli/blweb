@@ -31,8 +31,9 @@
 
     .logo1{
         padding-top: 5px;
-        height: 215%;
+        height: 100%;
         filter: saturate(1.4);
+        background-color: black;
     }
 
     .list2 a {

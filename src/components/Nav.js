@@ -2,7 +2,7 @@ import React from 'react';
 import './Nav.css';
 import Logo from  './logo.png'; 
 import {Link} from 'react-scroll';
-import {FaBars, FaTimes, FaYoutube } from 'react-icons/fa'
+import {FaBars, FaTimes} from 'react-icons/fa'
 import {useState} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
