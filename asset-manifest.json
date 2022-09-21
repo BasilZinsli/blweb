@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/blweb/static/css/main.ad3e3b6d.css",
+    "main.css": "/blweb/static/css/main.87036d00.css",
     "main.js": "/blweb/static/js/main.f260606f.js",
     "static/js/787.6e348bec.chunk.js": "/blweb/static/js/787.6e348bec.chunk.js",
     "static/media/BL_total.jpg": "/blweb/static/media/BL_total.02d6f8e00b5e9d7c1542.jpg",
@@ -11,12 +11,12 @@
     "static/media/Solo_Stefan.jpg": "/blweb/static/media/Solo_Stefan.e860fe837a4b44b7744c.jpg",
     "static/media/logo.png": "/blweb/static/media/logo.7100754ec27ba5918bc7.png",
     "index.html": "/blweb/index.html",
-    "main.ad3e3b6d.css.map": "/blweb/static/css/main.ad3e3b6d.css.map",
+    "main.87036d00.css.map": "/blweb/static/css/main.87036d00.css.map",
     "main.f260606f.js.map": "/blweb/static/js/main.f260606f.js.map",
     "787.6e348bec.chunk.js.map": "/blweb/static/js/787.6e348bec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad3e3b6d.css",
+    "static/css/main.87036d00.css",
     "static/js/main.f260606f.js"
   ]
 }
