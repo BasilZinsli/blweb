@@ -34,6 +34,7 @@
         height: 100%;
         filter: saturate(1.4);
         background-color: black;
+        color:black;
     }
 
     .list2 a {
