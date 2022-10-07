@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/blweb/static/css/main.87036d00.css",
-    "main.js": "/blweb/static/js/main.f260606f.js",
+    "main.css": "/blweb/static/css/main.01d5f19b.css",
+    "main.js": "/blweb/static/js/main.3c8970a6.js",
     "static/js/787.6e348bec.chunk.js": "/blweb/static/js/787.6e348bec.chunk.js",
-    "static/media/BL_total.jpg": "/blweb/static/media/BL_total.02d6f8e00b5e9d7c1542.jpg",
-    "static/media/foto.jpg": "/blweb/static/media/foto.32e8db3d23045ae25d38.jpg",
-    "static/media/Solo_Manu.jpg": "/blweb/static/media/Solo_Manu.ced8646a948aa746760f.jpg",
-    "static/media/Solo_Basil.jpg": "/blweb/static/media/Solo_Basil.ed4a6edab695d0ee95bc.jpg",
-    "static/media/Solo_Leo.jpg": "/blweb/static/media/Solo_Leo.3c3677b2b3009f57f11f.jpg",
-    "static/media/Solo_Stefan.jpg": "/blweb/static/media/Solo_Stefan.e860fe837a4b44b7744c.jpg",
+    "static/media/foto.png": "/blweb/static/media/foto.6ee883638aada9587529.png",
+    "static/media/BL_total.png": "/blweb/static/media/BL_total.97b670e9279ca20ef419.png",
+    "static/media/Solo_Leo.png": "/blweb/static/media/Solo_Leo.8e1daf4ff10abcb96dbe.png",
+    "static/media/Solo_Basil.png": "/blweb/static/media/Solo_Basil.021721880717d95e4dca.png",
+    "static/media/Solo_Manu.png": "/blweb/static/media/Solo_Manu.1ffad56be828d0ca05dd.png",
+    "static/media/Solo_Stefan.png": "/blweb/static/media/Solo_Stefan.123c5b1a90bbf74c38cc.png",
     "static/media/logo.png": "/blweb/static/media/logo.7100754ec27ba5918bc7.png",
+    "static/media/Birdland_Logo.png": "/blweb/static/media/Birdland_Logo.688da7e00b7a3ddaf0dc.png",
     "index.html": "/blweb/index.html",
-    "main.87036d00.css.map": "/blweb/static/css/main.87036d00.css.map",
-    "main.f260606f.js.map": "/blweb/static/js/main.f260606f.js.map",
+    "main.01d5f19b.css.map": "/blweb/static/css/main.01d5f19b.css.map",
+    "main.3c8970a6.js.map": "/blweb/static/js/main.3c8970a6.js.map",
     "787.6e348bec.chunk.js.map": "/blweb/static/js/787.6e348bec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87036d00.css",
-    "static/js/main.f260606f.js"
+    "static/css/main.01d5f19b.css",
+    "static/js/main.3c8970a6.js"
   ]
 }
