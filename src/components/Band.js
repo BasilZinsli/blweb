@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import './Band.css';
-import Basil from './Solo_Basil.jpg'
-import Leo from './Solo_Leo.jpg'
-import Manu from './Solo_Manu.jpg'
-import Stefan from './Solo_Stefan.jpg'
+import Basil from './Solo_Basil.png'
+import Leo from './Solo_Leo.png'
+import Manu from './Solo_Manu.png'
+import Stefan from './Solo_Stefan.png'
 
 
 

@@ -1,6 +1,6 @@
 .Bandfoto{
   top:60px;
-  background-image: url("foto.jpg");
+  background-image: url("foto.png");
   background-color: transparent;
   background-size: cover;
   height: 100vh;
@@ -89,7 +89,7 @@
 @media screen and (min-width: 940px){
   .Bandfoto{
     
-    background-image: url("foto.jpg");
+    background-image: url("foto.png");
     background-color: black;
     background-size: cover;
     height: 100vh;
