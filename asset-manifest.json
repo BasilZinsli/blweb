@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blweb/static/css/main.01d5f19b.css",
-    "main.js": "/blweb/static/js/main.3c8970a6.js",
+    "main.js": "/blweb/static/js/main.ba90ed2b.js",
     "static/js/787.6e348bec.chunk.js": "/blweb/static/js/787.6e348bec.chunk.js",
     "static/media/foto.png": "/blweb/static/media/foto.6ee883638aada9587529.png",
     "static/media/BL_total.png": "/blweb/static/media/BL_total.97b670e9279ca20ef419.png",
@@ -13,11 +13,11 @@
     "static/media/Birdland_Logo.png": "/blweb/static/media/Birdland_Logo.688da7e00b7a3ddaf0dc.png",
     "index.html": "/blweb/index.html",
     "main.01d5f19b.css.map": "/blweb/static/css/main.01d5f19b.css.map",
-    "main.3c8970a6.js.map": "/blweb/static/js/main.3c8970a6.js.map",
+    "main.ba90ed2b.js.map": "/blweb/static/js/main.ba90ed2b.js.map",
     "787.6e348bec.chunk.js.map": "/blweb/static/js/787.6e348bec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01d5f19b.css",
-    "static/js/main.3c8970a6.js"
+    "static/js/main.ba90ed2b.js"
   ]
 }
