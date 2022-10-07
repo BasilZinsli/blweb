@@ -56,10 +56,11 @@
 
 .logo{
     padding-top: 5px;
-    height: 100%;
+    padding-left: 10px;
+    left:0;
+    height: 80%;
     filter: saturate(1.4);
-    background-color: black;
-    color:black;
+    
 }
 
 .list a {
@@ -184,9 +185,10 @@ margin-bottom: 5px;
     .Navbar {
         z-index: 1;
         position: fixed;
+        margin-left: 0;
         top:0px;
         width: 100vw;
-        height: 60px;
+        height: 80px;
         background-color: black;
         display: flex;
         align-items: center;
@@ -228,7 +230,8 @@ margin-bottom: 5px;
 
     .logo{
         padding-top: 5px;
-        height: 215%;
+        height: 80%;
+        left:0px;
         filter: saturate(1.4);
         background-color: black;
     }

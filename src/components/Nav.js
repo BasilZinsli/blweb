@@ -1,6 +1,6 @@
 import React from 'react';
 import './Nav.css';
-import Logo from  './logo.png'; 
+import Logo from  './Birdland_Logo.png'; 
 import {Link} from 'react-scroll';
 import {FaBars, FaTimes} from 'react-icons/fa'
 import {useState} from 'react';
