@@ -22,6 +22,7 @@
   background-color: transparent;
   line-height: 2;
   top:110px;
+  text-align: center;
 }
 
 .Text2{
@@ -33,6 +34,7 @@
   background-color: transparent;
   line-height: 2;
   top:300px;
+  text-align: center;
 }
 
 @media screen and (max-width: 400px){
@@ -45,6 +47,7 @@
     background-color: transparent;
     line-height: 2;
     top:110px;
+    text-align: center;
   }
   
   .Text2{
@@ -56,6 +59,7 @@
     background-color: transparent;
     line-height: 2;
     top:200px;
+    text-align: center;
   }
   
 }
@@ -121,6 +125,7 @@
     animation-fill-mode: forwards;
     animation-duration: 4s;
     line-height: 2;
+    text-align: left;
     
   }
 
@@ -141,6 +146,7 @@
     animation-fill-mode: forwards;
     animation-duration: 4s;
     line-height: 2;
+    text-align: left;
   }
 
   @keyframes top2 {

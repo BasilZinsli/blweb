@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavAGB.css';
-import Logo from  './logo.png'; 
+import Logo from  './Birdland_Logo.png'; 
 import {Link} from 'react-router-dom';
 
 function NavAGB(){
@@ -13,7 +13,7 @@ function NavAGB(){
                 <ul className='list2'>
                     
                     <li> 
-                    <Link to='/'><span>Home</span><i></i></Link> 
+                        <Link to='/'><span>Home</span><i></i></Link> 
                     </li>
                     
                 </ul>     

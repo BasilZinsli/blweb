@@ -89,7 +89,7 @@ function Band() {
   return (  
     <div id='band'>
       <div className='Absatz' > 
-      <h5 className='Biotitel'>Bio</h5>
+      <h5 className='Biotitel'>Band/Bio</h5>
       <p className='Textband'> Birdland steht für professionelle Livemusik, welche in Kombination mit viel Leidenschaft für  
     unvergessliche Momente sorgt. Auf Anfrage ist es auch möglich, eine kleinere Formation zu buchen,
     welche optimal zu deinem Anlass passt.</p> </div>

@@ -10,7 +10,7 @@ export default function Footer(){
     return(
         <div className='Footer' id='Footer'>
             <div className='socLinks'>
-                <a href='https://www.instagram.com/birdland_band/?hl=de' className='Insta' style={{ border: "none"}}>
+                <a href='https://www.instagram.com/birdland_band/?hl=de' className='Insta'  style={{ border: "none"}}>
                     <FontAwesomeIcon icon={faInstagramSquare} size="2x" color='White' />   
                 </a>
 
@@ -22,20 +22,22 @@ export default function Footer(){
                     <FontAwesomeIcon icon={faFacebookSquare} size="2x" color='White' /> 
                 </a>
             </div>   
+            
             <div className='ImprAGB'>
                 <Link to='/Impressum' className='IAGB' style={{ border: "none"}}>
                         Impressum   
                 </Link> 
+                
                 <Link to='/AGB' className='IAGB' style={{ border: "none"}}>
                         Datenschutz   
-                </Link> 
-            </div>   
+                </Link>
+            </div>     
 
             <div className='Copyright'>
             <p>
             Copyright by Basil Zinsli 2022
-            </p>   
-            </div>     
+            </p>  
+            </div>
         </div>
     );
 }
