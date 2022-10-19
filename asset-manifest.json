@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/blweb/static/css/main.4f77c58e.css",
-    "main.js": "/blweb/static/js/main.6286cdbb.js",
-    "static/js/787.6e348bec.chunk.js": "/blweb/static/js/787.6e348bec.chunk.js",
-    "static/media/foto.png": "/blweb/static/media/foto.6ee883638aada9587529.png",
-    "static/media/BL_total.png": "/blweb/static/media/BL_total.97b670e9279ca20ef419.png",
-    "static/media/Solo_Leo.png": "/blweb/static/media/Solo_Leo.8e1daf4ff10abcb96dbe.png",
-    "static/media/Solo_Basil.png": "/blweb/static/media/Solo_Basil.021721880717d95e4dca.png",
-    "static/media/Solo_Manu.png": "/blweb/static/media/Solo_Manu.1ffad56be828d0ca05dd.png",
-    "static/media/Solo_Stefan.png": "/blweb/static/media/Solo_Stefan.123c5b1a90bbf74c38cc.png",
-    "static/media/Birdland_Logo.png": "/blweb/static/media/Birdland_Logo.688da7e00b7a3ddaf0dc.png",
-    "index.html": "/blweb/index.html",
-    "main.4f77c58e.css.map": "/blweb/static/css/main.4f77c58e.css.map",
-    "main.6286cdbb.js.map": "/blweb/static/js/main.6286cdbb.js.map",
-    "787.6e348bec.chunk.js.map": "/blweb/static/js/787.6e348bec.chunk.js.map"
+    "main.css": "/static/css/main.a1292366.css",
+    "main.js": "/static/js/main.f96847f6.js",
+    "static/js/787.6e348bec.chunk.js": "/static/js/787.6e348bec.chunk.js",
+    "static/media/foto.png": "/static/media/foto.6ee883638aada9587529.png",
+    "static/media/foto.webp": "/static/media/foto.cd2a1a7560e578f0299b.webp",
+    "static/media/BL_total.webp": "/static/media/BL_total.9450e612ba3a5d5ced6d.webp",
+    "static/media/Birdland_Logo.png": "/static/media/Birdland_Logo.688da7e00b7a3ddaf0dc.png",
+    "static/media/Solo_Leo.webp": "/static/media/Solo_Leo.a693a7879c89816cd0df.webp",
+    "static/media/Solo_Basil.webp": "/static/media/Solo_Basil.77d3749058216b70c278.webp",
+    "static/media/Solo_Manu.webp": "/static/media/Solo_Manu.e7563872aa37b3517b22.webp",
+    "static/media/Solo_Stefan.webp": "/static/media/Solo_Stefan.8cca069dfbcfb9025491.webp",
+    "index.html": "/index.html",
+    "main.a1292366.css.map": "/static/css/main.a1292366.css.map",
+    "main.f96847f6.js.map": "/static/js/main.f96847f6.js.map",
+    "787.6e348bec.chunk.js.map": "/static/js/787.6e348bec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f77c58e.css",
-    "static/js/main.6286cdbb.js"
+    "static/css/main.a1292366.css",
+    "static/js/main.f96847f6.js"
   ]
 }
