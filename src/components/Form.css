@@ -1,6 +1,6 @@
 .Kontakt{
     background-color: white;
-    padding: 1vh;
+    padding: 20px 10px;
 }
 
 .Kontakttitle{
@@ -43,7 +43,7 @@
 
 .Background{
     width: 100%;
-    background-image: url("BL_total.png");
+    background-image: url("BL_total.webp");
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,6 +51,7 @@
     justify-content: center;
     align-items: center;
     padding: 30vh 0;
+    
 }
 .Field{
     width: 400px;
@@ -131,23 +132,35 @@ form{
     
 }
 
-.formels{
+.submit{
     height: 40px;
     background-color: transparent;
     color:white; 
     margin: 1vh;
     border:solid rgb(255, 255, 255) 2px; 
-    border-radius: 5px;  
-    
-    
+    border-radius: 5px;     
 }
 
-.formels:active{
+.submit:active{
     border:solid white 2px; 
     font-style:normal; 
     z-index: 2;
     box-shadow: 0 0 10px #e7bd32;
 }
+
+.submit:hover{
+    opacity: 0.6; 
+}
+.submitdis{
+    height: 40px;
+    background-color: transparent;
+    color:black; 
+    margin: 1vh;
+    border:solid rgb(0, 0, 0) 2px; 
+    border-radius: 5px;     
+}
+
+
 
 
 @media screen and (max-width: 420px){
@@ -155,8 +168,8 @@ form{
         
         background-image: none;
         background-size: 0;  
-        padding-top: 14vh;
-        padding-bottom: 2vh;
+        padding-top: 100px;
+        padding-bottom: 30px;
         width: 100%;
         height: auto;
         background-size: 0;
@@ -187,16 +200,16 @@ form{
     .Field{
         width: 90vw; 
         margin: auto;
-        margin-top: -10vh;
+        margin-top: -25px;
+        margin-bottom: 10px;
         background-color: rgb(43, 43, 43);
         opacity: 0.95;
         border-radius: 10px;
         justify-content: center;
         align-items: center;
-        padding: 1.6vh 1.6vw;
+        padding: 20px 10px;
         overflow:hidden;
-        box-shadow: 0 0 15px #000000;
-        
+        box-shadow: 0 0 15px #000000;  
     }
 
 }
@@ -210,7 +223,8 @@ form{
 @media screen and (min-width: 940px){
     .Kontakt{
         background-color: white;
-        padding: 1vh;
+        padding: 20px 10px;
+        
     }
     .formel:focus-visible{
         border:none; 
@@ -246,7 +260,7 @@ form{
 
     .Background{
         width: 100%;
-        background-image: url("BL_total.png");
+        background-image: url("BL_total.webp");
         background-size:cover;
         background-position: center;
         background-repeat: no-repeat;

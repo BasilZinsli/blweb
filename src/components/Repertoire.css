@@ -1,4 +1,6 @@
 .Rep{
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: white;
 }
 .repTitel{
@@ -51,6 +53,7 @@ box-shadow: 0 0 15px #e7bd42;
   padding: 0.5vh 3vw;
   text-align: center;
   outline: none;
+  caret-color: transparent;
 }
 
 
@@ -112,6 +115,8 @@ box-shadow: 0 0 15px #e7bd42;
 
 @media screen and (min-width: 940px){
 .Rep{
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: white;
   }
   .repTitel{
@@ -150,7 +155,7 @@ box-shadow: 0 0 15px #e7bd42;
   color:white;
   justify-content: center;
   margin: auto;
-  padding: 5vh 0;
+  padding: 70px 0;
   }
   .form1 :focus{
   box-shadow: 0 0 15px #e7bd42;
@@ -159,7 +164,7 @@ box-shadow: 0 0 15px #e7bd42;
   #stext{
     background-color: rgb(43, 43, 43);
     color:white; 
-    
+    caret-color: transparent;
     border-radius: 5px;
     font-size: larger;
     padding: 0.5vh 3vw;

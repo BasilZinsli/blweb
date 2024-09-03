@@ -1,26 +1,25 @@
-import React from 'react';
-import './NavAGB.css';
-import Logo from  './Birdland_Logo.png'; 
-import {Link} from 'react-router-dom';
+import React from "react";
+import "./NavAGB.css";
+import Logo from "./Birdland_Logo.png";
+import { Link } from "react-router-dom";
 
-function NavAGB(){
+function NavAGB() {
+  return (
+    <div className="Frontpage">
+      <div className="Navbar1">
+        <img className="logo1" src={Logo} alt="logo1"></img>
 
-    return(
-        <div className='Frontpage'>
-            <div className='Navbar1'>
-                <img className='logo1' src={Logo} alt='logo1'></img>
-
-                <ul className='list2'>
-                    
-                    <li> 
-                        <Link to='/'><span>Home</span><i></i></Link> 
-                    </li>
-                    
-                </ul>     
-            </div>
-            
-        </div>
-    );
+        <ul className="list2">
+          <li>
+            <Link to="/">
+              <span>Home</span>
+              <i></i>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
 }
 
 export default NavAGB;

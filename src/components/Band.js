@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import './Band.css';
-import Basil from './Solo_Basil.png'
-import Leo from './Solo_Leo.png'
-import Manu from './Solo_Manu.png'
-import Stefan from './Solo_Stefan.png'
+import Basil from './Solo_Basil.webp'
+import Leo from './Solo_Leo.webp'
+import Manu from './Solo_Manu.webp'
+import Stefan from './Solo_Stefan.webp'
 
 
 
@@ -13,6 +13,7 @@ function Band() {
 
   const [show1,setShow1] = useState(false);
   
+
   function Enter1 (e) {
     setShow1(true);
     console.log(show1);
@@ -50,6 +51,7 @@ function Band() {
    }
 
 
+   // show =  [true, true, false, true] show4 = show[3]
   const [show4,setShow4] = useState(false);
   
   function Enter4 (e) {

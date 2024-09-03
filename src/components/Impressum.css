@@ -1,6 +1,6 @@
 .FotoAGB{
     top:60px;
-    background-image: url("foto.png");
+    background-image: url("foto.webp");
     background-color: transparent;
     background-size: cover;
     height: 100vh;
@@ -21,6 +21,7 @@
     background-color: transparent;
     line-height: 2;
     top: 110px;
+    
 }
 
   
