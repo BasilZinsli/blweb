@@ -1,72 +1,41 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "./Form.css";
-
-import { useRef } from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 import emailjs from "@emailjs/browser";
 
+// Validation schema using Yup
+const schema = yup.object().shape({
+  Name: yup.string().required("Name is required"),
+  "Art der Veranstaltung": yup.string().required("Art der Veranstaltung is required"),
+  Ort: yup.string().required("Ort is required"),
+  "Anzahl Personen": yup.string().required("Anzahl Personen is required"),
+  Telefon: yup.string().required("Telefon is required"),
+  Email: yup.string().email("Invalid email").required("Email is required"),
+  Datum: yup.date().required("Datum is required").nullable(),
+});
+
 function Form() {
-  const [data, setData] = useState("");
+  const { register, handleSubmit, formState: { errors }, setValue } = useForm({
+    resolver: yupResolver(schema), // Yup schema for validation
+  });
 
   const [TYtoggle, setTYtoggle] = useState(true);
 
-  function toggleTY(e) {
-    setTYtoggle(false);
-    console.log(TYtoggle);
-  }
-  const [Buttoggle, setButtoggle] = useState(false);
-
-  function toggleBut(e) {
-    setTYtoggle(true);
-    console.log(TYtoggle);
-  }
-
-  const [Formval, setFormval] = useState([
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-  ]);
-
-  function onchangeFormval(e) {
-    let arr = Formval;
-    let val = false;
-
-    if (e.target.value) {
-      arr[e.target.id] = true;
-      console.log(e.target.id);
-    } else {
-      arr[e.target.id] = false;
-      setButtoggle(false);
-    }
-
-    if (arr.includes(false)) {
-      val = false;
-    } else {
-      val = true;
-    }
-    setFormval(arr);
-    setButtoggle(val);
-  }
-
-  const form = useRef();
-
-  const sendEmail = (e) => {
+  const sendEmail = (data, e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_uiydeb8",
         "template_8366nuq",
-        form.current,
+        e.target,
         "DV0747svO_L65l7MK"
       )
       .then(
         (result) => {
           console.log(result.text);
+          setTYtoggle(false);
         },
         (error) => {
           console.log(error.text);
@@ -80,12 +49,12 @@ function Form() {
         <h1 className="Kontakttitle">Kontakt</h1>
         <h5 className="Kontakt1">
           Schön, dass du auf unserer Seite gelandet bist. Wir würden es lieben,
-          dich auf eine musikalische Reise mitzunehmen.{" "}
+          dich auf eine musikalische Reise mitzunehmen.
         </h5>
         <h5 className="Kontakt1">
-          Interesse geweckt oder noch Fragen? Gerne begleiten wir dich dabei!{" "}
+          Interesse geweckt oder noch Fragen? Gerne begleiten wir dich dabei!
         </h5>
-        <h5 className="Kontakt1">booking@birdland-music.ch | +41797307833 </h5>
+        <h5 className="Kontakt1">booking@birdland-music.ch | +41797307833</h5>
       </div>
 
       <div className="Background">
@@ -93,86 +62,72 @@ function Form() {
           {TYtoggle ? (
             <>
               <h1 className="Kontakt2">Kontaktiere uns!</h1>
-              <form ref={form} onSubmit={sendEmail}>
+              <form onSubmit={handleSubmit(sendEmail)}>
                 <input
-                  id="0"
+                  {...register("Name")}
                   className="formel"
-                  name="Name"
-                  autoComplete="off"
-                  placeholder="Name*"
-                  onChange={(e) => onchangeFormval(e)}
+                  placeholder="Name"
                 />
+                {errors.Name && <p className="helper-text">{errors.Name.message}</p>}
+
                 <input
-                  id="1"
+                  {...register("Art der Veranstaltung")}
                   className="formel"
-                  name="Art der Veranstaltung"
-                  autoComplete="off"
-                  placeholder="Art der Veranstaltung*"
-                  onChange={(e) => onchangeFormval(e)}
+                  placeholder="Art der Veranstaltung"
                 />
+                {errors["Art der Veranstaltung"] && (
+                  <p className="helper-text">{errors["Art der Veranstaltung"].message}</p>
+                )}
+
                 <input
-                  id="2"
+                  {...register("Ort")}
                   className="formel"
-                  name="Ort"
-                  autoComplete="off"
-                  placeholder="Ort*"
-                  onChange={(e) => onchangeFormval(e)}
+                  placeholder="Ort"
                 />
+                {errors.Ort && <p className="helper-text">{errors.Ort.message}</p>}
+
                 <input
-                  id="3"
+                  {...register("Anzahl Personen")}
                   className="formel"
-                  name="Anzahl Personen"
-                  autoComplete="off"
-                  placeholder="Anzahl Personen*"
-                  onChange={(e) => onchangeFormval(e)}
+                  placeholder="Anzahl Personen"
                 />
+                {errors["Anzahl Personen"] && (
+                  <p className="helper-text">{errors["Anzahl Personen"].message}</p>
+                )}
+
                 <input
-                  id="4"
+                  {...register("Telefon")}
                   className="formel"
-                  name="Telefon"
-                  autoComplete="off"
-                  placeholder="Telefon*"
-                  onChange={(e) => onchangeFormval(e)}
+                  placeholder="Telefon"
                 />
+                {errors.Telefon && <p className="helper-text">{errors.Telefon.message}</p>}
+
                 <input
-                  id="5"
+                  {...register("Email")}
                   className="formel"
-                  name="Email"
-                  autoComplete="off"
-                  placeholder="Email*"
-                  onChange={(e) => onchangeFormval(e)}
+                  placeholder="Email"
                 />
+                {errors.Email && <p className="helper-text">{errors.Email.message}</p>}
+
                 <input
-                  id="6"
+                  {...register("Datum")}
                   className="formel"
-                  name="Datum"
-                  autoComplete="off"
-                  placeholder="Datum*"
-                  onChange={(e) => onchangeFormval(e)}
-                />
+                  placeholder="Datum"
+                  />
+                {errors.Datum && <p className="helper-text">{errors.Datum.message}</p>}
+
                 <textarea
+                  {...register("Nachricht")}
                   className="formelNachricht"
-                  name="Nachricht"
-                  autoComplete="off"
                   placeholder="Nachricht"
                   type="text"
                 />
-                {Buttoggle ? (
-                  <input
-                    className="submit"
-                    type="submit"
-                    value="Senden"
-                    onClick={toggleTY}
-                  />
-                ) : (
-                  <input
-                    className="submitdis"
-                    type="submit"
-                    value="Senden (Form unvollständig)"
-                    onClick={toggleTY}
-                    disabled
-                  />
-                )}
+
+                <input
+                  className="submit"
+                  type="submit"
+                  value="Senden"
+                />
               </form>
             </>
           ) : (

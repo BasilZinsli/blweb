@@ -105,17 +105,16 @@
 }
 
 @media screen and (max-width: 420px){
-    .Bios{
-        width:90vw;
-        display: flex;
-        flex-direction: column;
-        gap: 10vw; 
-        justify-content: center;
-        align-items: center;
-    
+    .Bios {
+        width: 90vw; /* Ensures the grid takes up most of the available width */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid */
+        gap: 2vw; /* Adjust the gap between boxes */
+        justify-items: center; /* Center the boxes in each grid column */
+        align-items: center; /* Aligns content vertically */
         margin-top: 50px;
-        padding:0;
         margin-bottom: 50px;
+        padding: 0;
     }
     .Quad{
         width: 90%;
@@ -196,17 +195,16 @@
  
  
  @media screen and (min-width: 940px){
-    .Bios{
-        width:60vw;
+    .Bios {
+        width: 90vw; /* Ensures the grid takes up most of the available width */
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: space-around;
-        align-items: center;
-        margin:auto;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        padding-left:48vw; 
-        padding-right:48vw;
+        grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid */
+        gap: 2vw; /* Adjust the gap between boxes */
+        justify-items: center; /* Center the boxes in each grid column */
+        align-items: center; /* Aligns content vertically */
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0;
     }
 
     .Textband{

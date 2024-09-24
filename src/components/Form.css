@@ -72,10 +72,30 @@ form{
     background-color: transparent;
     justify-content: center;
     display: flex;
-    flex-direction: column;     
+    flex-direction: column;    
+    text-align: left; /* Left-align all text in the form */ 
 }
 
+/* Helper text for validation errors */
+.helper-text {
+    background-color: rgb(43, 43, 43);
+    font-size: 0.5rem; /* Smaller font size */
+    color: white; /* Red color to make it noticeable */
+    
+    margin-left: 10px;
+    text-align: left; /* Align the helper text to the left */
+    font-weight: 400; /* Keep it regular weight */
+}
 
+/* Style the placeholder color */
+::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light white/gray placeholder text */
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
 
 .formel{
     height: 40px;
@@ -84,7 +104,8 @@ form{
     margin: 1vh;
     border:solid rgb(19, 19, 19) 2px; 
     border-radius: 5px;  
-    text-align: center; 
+    padding-left: 10px;
+    text-align: left; 
 }
 
 
@@ -98,7 +119,7 @@ form{
     border:solid rgb(19, 19, 19) 2px; 
     border-radius: 5px;  
     text-align: center; 
-    min-width: 94%;
+    min-width: 96%;
     resize:none;
     justify-content: space-around;
     padding: 1vh 1vw;
