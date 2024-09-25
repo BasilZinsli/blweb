@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import "./Form.css";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import emailjs from "@emailjs/browser";
+import { TextField, Button, Typography } from '@mui/material';
+import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
+import "./Form.css";
 
 // Validation schema using Yup
 const schema = yup.object().shape({
@@ -17,12 +20,12 @@ const schema = yup.object().shape({
 });
 
 function Form() {
-  const { register, handleSubmit, formState: { errors }, setValue } = useForm({
-    resolver: yupResolver(schema), // Yup schema for validation
+  const { register, handleSubmit, control, formState: { errors } } = useForm({
+    resolver: yupResolver(schema),
   });
 
   const [TYtoggle, setTYtoggle] = useState(true);
-
+ 
   const sendEmail = (data, e) => {
     e.preventDefault();
     emailjs
@@ -43,8 +46,39 @@ function Form() {
       );
   };
 
+  const textFieldStyles = {
+    input: {
+      color: 'white',  // Text color inside input
+    },
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: 'black',
+        borderWidth: '2px',  // Default border thickness
+      },
+      '&:hover fieldset': {
+        borderColor: 'gray',  // Border color on hover
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: 'black',  // Border color when focused
+      },
+    },
+
+    // Target the label color when the field is focused
+  '& .MuiInputLabel-root': {
+    color: 'gray',  // Default label color
+    '&.Mui-focused': {
+      color: '#e7bd32',  // Yellow label color when focused
+    },
+  },
+    
+    '& .MuiFormHelperText-root': {
+      color: 'white',  // Helper text color (error messages)
+    },
+  };
+
+
   return (
-    <div id="kontakt">
+    <div id="kontakt" className="background-image">
       <div className="Kontakt">
         <h1 className="Kontakttitle">Kontakt</h1>
         <h5 className="Kontakt1">
@@ -59,75 +93,126 @@ function Form() {
 
       <div className="Background">
         <div className="Field">
-          {TYtoggle ? (
+        {TYtoggle ? (
             <>
-              <h1 className="Kontakt2">Kontaktiere uns!</h1>
-              <form onSubmit={handleSubmit(sendEmail)}>
-                <input
+              <Typography variant="h5" gutterBottom className="Kontakt2">
+                Kontaktiere uns!
+              </Typography>
+              <form onSubmit={handleSubmit(sendEmail)}  >
+                <TextField
                   {...register("Name")}
-                  className="formel"
-                  placeholder="Name"
+                  label="Name"
+                  fullWidth
+                  margin="normal"
+                  error={!!errors.Name}
+                  helperText={errors.Name?.message}
+                  sx={textFieldStyles}
                 />
-                {errors.Name && <p className="helper-text">{errors.Name.message}</p>}
 
-                <input
+                <TextField
                   {...register("Art der Veranstaltung")}
-                  className="formel"
-                  placeholder="Art der Veranstaltung"
+                  label="Art der Veranstaltung"
+                  fullWidth
+                  margin="normal"
+                  error={!!errors["Art der Veranstaltung"]}
+                  helperText={errors["Art der Veranstaltung"]?.message}
+                  sx={textFieldStyles}
+                  
                 />
-                {errors["Art der Veranstaltung"] && (
-                  <p className="helper-text">{errors["Art der Veranstaltung"].message}</p>
-                )}
 
-                <input
+                <TextField
                   {...register("Ort")}
-                  className="formel"
-                  placeholder="Ort"
+                  label="Ort"
+                  fullWidth
+                  margin="normal"
+                  error={!!errors.Ort}
+                  helperText={errors.Ort?.message}
+                  sx={textFieldStyles}
                 />
-                {errors.Ort && <p className="helper-text">{errors.Ort.message}</p>}
 
-                <input
+                <TextField
                   {...register("Anzahl Personen")}
-                  className="formel"
-                  placeholder="Anzahl Personen"
+                  label="Anzahl Personen"
+                  fullWidth
+                  margin="normal"
+                  error={!!errors["Anzahl Personen"]}
+                  helperText={errors["Anzahl Personen"]?.message}
+                  sx={textFieldStyles}
                 />
-                {errors["Anzahl Personen"] && (
-                  <p className="helper-text">{errors["Anzahl Personen"].message}</p>
-                )}
 
-                <input
+                <TextField
                   {...register("Telefon")}
-                  className="formel"
-                  placeholder="Telefon"
+                  label="Telefon"
+                  fullWidth
+                  margin="normal"
+                  error={!!errors.Telefon}
+                  helperText={errors.Telefon?.message}
+                  sx={textFieldStyles}
                 />
-                {errors.Telefon && <p className="helper-text">{errors.Telefon.message}</p>}
 
-                <input
+                <TextField
                   {...register("Email")}
-                  className="formel"
-                  placeholder="Email"
+                  label="Email"
+                  fullWidth
+                  margin="normal"
+                  error={!!errors.Email}
+                  helperText={errors.Email?.message}
+                  sx={textFieldStyles}
                 />
-                {errors.Email && <p className="helper-text">{errors.Email.message}</p>}
 
-                <input
-                  {...register("Datum")}
-                  className="formel"
-                  placeholder="Datum"
-                  />
-                {errors.Datum && <p className="helper-text">{errors.Datum.message}</p>}
+                 {/* DatePicker with a custom input field */}
+                 <Controller
+                  name="Datum"
+                  control={control}
+                  render={({ field }) => (
+                    <DatePicker
+                      selected={field.value}
+                      onChange={(date) => field.onChange(date)}
+                      customInput={
+                        <TextField
+                          fullWidth
+                          margin="normal"
+                          label="Datum"
+                          error={!!errors.Datum}
+                          helperText={errors.Datum?.message}
+                          sx={{
+                            ...textFieldStyles,
+                            width: '338px',  // Ensure the input takes the full width
+                          }}
+                        />
+                      }
+                    />
+                  )}
+                />
 
-                <textarea
+
+
+                <TextField
                   {...register("Nachricht")}
-                  className="formelNachricht"
-                  placeholder="Nachricht"
-                  type="text"
+                  label="Nachricht"
+                  fullWidth
+                  margin="normal"
+                  multiline
+                  rows={4}
+                  sx={textFieldStyles}
                 />
 
-                <input
-                  className="submit"
-                  type="submit"
-                  value="Senden"
-                />
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                fullWidth
+                sx={{
+                  marginTop: '2vh',
+                  backgroundColor: 'black',
+                  '&:hover': {
+                    backgroundColor: '#e7bd32',
+                    color: 'black',
+                  },
+                }}
+              >
+                Senden
+              </Button>
               </form>
             </>
           ) : (

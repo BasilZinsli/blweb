@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet";
 function MainPage() {
 
   return (
-    <div>
+    <div style={{ backgroundColor: 'black' }}>
       <Helmet>
   <title>Birdland Band - Beste Hochzeits- und Partyband in Zürich</title>
   <meta

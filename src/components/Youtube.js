@@ -4,7 +4,7 @@ import './Youtube.css'
 
 function Youtube () {
     return( 
-        <div className='player-wrapper'>
+        <div className='player-wrapper' style={{ backgroundColor: 'black' }}>
           <ReactPlayer
           className='react-player'
           url='https://www.youtube.com/watch?v=rL4Thq8L_Tk'

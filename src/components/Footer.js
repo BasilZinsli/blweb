@@ -8,7 +8,8 @@ export default function Footer(){
     
 
     return(
-        <div className='Footer' id='Footer'>
+        <div style={{ backgroundColor: 'black' }}>
+        <div className='Footer' id='Footer' style={{ backgroundColor: 'black' }}>
             <div className='socLinks'>
                 <a href='https://www.instagram.com/birdland_band/?hl=de' className='Insta'  style={{ border: "none"}}>
                     <FontAwesomeIcon icon={faInstagramSquare} size="2x" color='White' />   
@@ -38,6 +39,7 @@ export default function Footer(){
             Copyright by Basil Zinsli 2022
             </p>  
             </div>
+        </div>
         </div>
     );
 }

@@ -1,297 +1,122 @@
-.Kontakt{
+
+
+
+.Kontakt {
     background-color: white;
     padding: 20px 10px;
-}
-
-.Kontakttitle{
+  }
+  
+  .Kontakttitle {
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
     background-color: white;
-    text-align: center;  
-    font-weight:bolder;
-    font-size: larger; 
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
     color: black;
-}
-
-.Kontakt1{
+  }
+  
+  .Kontakt1 {
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
     background-color: white;
-    text-align: center;  
-    font-weight:300;
+    text-align: center;
+    font-weight: 300;
     color: black;
-}
-
-.Kontakt2{
+  }
+  
+  .Kontakt2 {
     background-color: transparent;
-    text-align: center;  
-    font-weight:bolder;
-    font-size: larger; 
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
     color: white;
-    
-}
-
-.Kontakt3{
+  }
+  
+  .Kontakt3 {
     background-color: transparent;
-    text-align: center;  
-    
+    text-align: center;
     color: white;
     margin-top: 5px;
-    
-}
-
-
-.Background{
+  }
+  
+  .Background {
     width: 100%;
+    
     background-image: url("BL_total.webp");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-position-y: 0px; 
     justify-content: center;
     align-items: center;
     padding: 30vh 0;
-    
-}
-.Field{
+  }
+  
+  .Field {
     width: 400px;
     margin: auto;
-    margin-top: 0vh;
     background-color: rgb(43, 43, 43);
     opacity: 0.95;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
     padding: 1.6vh 1.6vw;
-    overflow:hidden;
-    box-shadow: 0 0 15px #000000;   
-}
-
-
-form{
-    background-color: transparent;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;    
-    text-align: left; /* Left-align all text in the form */ 
-}
-
-/* Helper text for validation errors */
-.helper-text {
-    background-color: rgb(43, 43, 43);
-    font-size: 0.5rem; /* Smaller font size */
-    color: white; /* Red color to make it noticeable */
-    
+    overflow: hidden;
+    box-shadow: 0 0 15px #000000;
+  }
+  
+  /* Helper text for validation errors */
+  .helper-text {
+    font-size: 0.5rem;
+    color: white;
     margin-left: 10px;
-    text-align: left; /* Align the helper text to the left */
-    font-weight: 400; /* Keep it regular weight */
-}
-
-/* Style the placeholder color */
-::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* Light white/gray placeholder text */
+    text-align: left;
+    font-weight: 400;
+  }
+  
+  /* Style the placeholder color */
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.7);
   }
   
   input::placeholder,
   textarea::placeholder {
     color: rgba(255, 255, 255, 0.7);
   }
-
-.formel{
-    height: 40px;
-    background-color: transparent;
-    color:white; 
-    margin: 1vh;
-    border:solid rgb(19, 19, 19) 2px; 
-    border-radius: 5px;  
-    padding-left: 10px;
-    text-align: left; 
-}
-
-
-.formelNachricht{
-    height: 140px;
-    background-color: transparent;
-    color:white; 
-    margin: auto;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    border:solid rgb(19, 19, 19) 2px; 
-    border-radius: 5px;  
-    text-align: center; 
-    min-width: 96%;
-    resize:none;
-    justify-content: space-around;
-    padding: 1vh 1vw;
-    
-    
-    
-}
-.formelNachricht:focus{
-    outline: none;
-    font-style:normal; 
-    z-index: 2;
-    box-shadow: 0 0 5px #e7bd32;
-    
-}
-.formelNachricht:focus-visible{
-    border:none; 
-    
-}
-
-
-
-.formel:focus{
-    outline: none;
-    font-style:normal; 
-    z-index: 2;
-    box-shadow: 0 0 5px #e7bd32;
-    
-}
-.formel:focus-visible{
-    border:none; 
-    
-}
-
-.submit{
-    height: 40px;
-    background-color: transparent;
-    color:white; 
-    margin: 1vh;
-    border:solid rgb(255, 255, 255) 2px; 
-    border-radius: 5px;     
-}
-
-.submit:active{
-    border:solid white 2px; 
-    font-style:normal; 
-    z-index: 2;
-    box-shadow: 0 0 10px #e7bd32;
-}
-
-.submit:hover{
-    opacity: 0.6; 
-}
-.submitdis{
-    height: 40px;
-    background-color: transparent;
-    color:black; 
-    margin: 1vh;
-    border:solid rgb(0, 0, 0) 2px; 
-    border-radius: 5px;     
-}
-
-
-
-
-@media screen and (max-width: 420px){
-    .Background{
-        
-        background-image: none;
-        background-size: 0;  
-        padding-top: 100px;
-        padding-bottom: 30px;
-        width: 100%;
-        height: auto;
-        background-size: 0;
-        justify-content: center;
-        align-items: center;
-        
+  
+  .submit:hover {
+    opacity: 0.6;
+  }
+  
+  @media screen and (max-width: 420px) {
+    .Background {
+      background-image: none;
+      padding-top: 100px;
+      padding-bottom: 30px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
     }
-    .formelNachricht{
-        height: 140px;
-        background-color: transparent;
-        color:white; 
-        margin: auto;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-        border:solid rgb(19, 19, 19) 2px; 
-        border-radius: 5px;  
-        text-align: center; 
-        max-width: 94%;
-        resize:none;
-        justify-content: space-around;
-        
-        
+  
+    .Field {
+      width: 90vw;
+      margin: auto;
+      margin-top: -25px;
+      margin-bottom: 10px;
+      background-color: rgb(43, 43, 43);
+      opacity: 0.95;
+      border-radius: 10px;
+      padding: 20px 10px;
+      box-shadow: 0 0 15px #000000;
     }
-    .formel:focus-visible{
-        border:none; 
-        
+  }
+  
+  @media screen and (min-width: 940px) {
+    .Background {
+      padding: 30vh 0;
     }
-    .Field{
-        width: 90vw; 
-        margin: auto;
-        margin-top: -25px;
-        margin-bottom: 10px;
-        background-color: rgb(43, 43, 43);
-        opacity: 0.95;
-        border-radius: 10px;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 10px;
-        overflow:hidden;
-        box-shadow: 0 0 15px #000000;  
-    }
-
-}
-
-
-
-
-
-
-
-@media screen and (min-width: 940px){
-    .Kontakt{
-        background-color: white;
-        padding: 20px 10px;
-        
-    }
-    .formel:focus-visible{
-        border:none; 
-        
-    }
-    .Kontakttitle{
-        padding-top: 0.5vh;
-        padding-bottom: 0.5vh;
-        background-color: white;
-        text-align: center;  
-        font-weight:bolder;
-        font-size: larger; 
-        color: black;
-    }
-
-    .Kontakt1{
-        padding-top: 0.5vh;
-        padding-bottom: 0.5vh;
-        background-color: white;
-        text-align: center;  
-        font-weight:300;
-        color: black;
-    }
-
-    .Kontakt2{
-        background-color: transparent;
-        text-align: center;  
-        font-weight:bolder;
-        font-size: larger; 
-        color: white;
-    }
-
-
-    .Background{
-        width: 100%;
-        background-image: url("BL_total.webp");
-        background-size:cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-position-y: 0px; 
-        justify-content: center;
-        align-items: center;
-        padding: 30vh 0;
-        
-    }
-    .Field{
+  
+    .Field {
         width: 400px;
         margin: auto;
         margin-top: 0vh;
@@ -301,38 +126,7 @@ form{
         justify-content: center;
         align-items: center;
         padding: 1.6vh 1.6vw;
-        overflow:hidden;
-        box-shadow: 0 0 15px #000000;   
-    }
-    
-    .formelNachricht{
-        height:140px;
-        background-color: transparent;
-        color:white; 
-        margin: auto;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-        border:solid rgb(19, 19, 19) 2px; 
-        border-radius: 5px;  
-        text-align: center; 
-        max-width: 94%;
-        resize:none;
-        justify-content: space-around;
-        
-    }
-
-    form{
-        background-color: transparent;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;     
-    }
-
-
-
-}
-
-   
-
-
-
+        box-shadow: 0 0 15px #000000;
+      }
+  }
+  

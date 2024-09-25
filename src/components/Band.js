@@ -89,7 +89,7 @@ function Band() {
    }
    
   return (  
-    <div id='band'>
+    <div id='band' style={{ backgroundColor: 'black' }}>
       <div className='Absatz' > 
       <h5 className='Biotitel'>Band/Bio</h5>
       <p className='Textband'> Birdland steht für professionelle Livemusik, welche in Kombination mit viel Leidenschaft für  

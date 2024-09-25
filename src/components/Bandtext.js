@@ -4,8 +4,8 @@ import './Bandtext.css';
 
 function Bandtext() {
   return (   
-        <>
-            <div className='Bandfoto' id='Home'> </div>
+        <div style={{ backgroundColor: 'black' }}>
+            <div className='Bandfoto' id='Home' > </div>
             <h1 className='Text1'>Party- und Hochzeitsband - stilvolle Livemusik für deinen Anlass</h1>
             <p className='Text2'>
                 Du suchst für die Umrahmung deines Events noch die passende Musik - wir haben sie. 
@@ -15,7 +15,7 @@ function Bandtext() {
                 Momente auf der Tanzfläche. 
             </p>
             
-        </>
+        </div>
        
     )
 }
